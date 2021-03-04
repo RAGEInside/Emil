@@ -1,0 +1,915 @@
+
+/*=========================================Обнуление========================================*/
+
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+/*============================================*//*============================================*/
+
+body {
+	min-width: 1250px;
+	background-color: #eeeeee;
+	font-family: Arial, Helvetica, "Helvetica Neue", Sans-serif;
+}
+
+/*Оболочка сайта =============================================================================*/
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+/*============================================*//*============================================*/
+
+/*Шапка сайта ================================================================================*/
+
+.header {
+	width: 100%;
+	min-height: 850px;
+	background-image: url(../IMG/Header/1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header__container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.header__content {
+	display: flex;
+	flex-direction: column;
+}
+
+.header__main {
+	max-width: 1020px;
+	background-color: #fff;
+	margin: 50px 0 0 0;
+}
+
+.header__main-block {
+	display: flex;
+	align-items: center;
+	padding: 15px;
+}
+
+.main__block-logo {
+	flex: 0 0 40%;
+	position: relative;
+}
+
+.main__block-logo::after {
+	content: " ";
+	border-right: 2px solid #fafafa;
+	height: 95px;
+	position: absolute;
+	right: 0;
+	top: -15px;
+}
+
+.main__block-info {
+	display: flex;
+}
+
+.main__block-mail {
+	display: flex;
+	align-items: center;
+	margin: 0 0 0 30px;
+}
+
+.mail__link {
+	color: #000;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0 0 0 10px;
+}
+
+.main__block-lang {
+	display: flex;
+	align-items: center;
+	margin: 0 0 0 50px;
+}
+
+.lang {
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0 0 0 10px;
+}
+
+.header__main-menu {
+	display: flex;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.menu {
+	flex: 0 0 80%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu a {
+	color: #000;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 0 0 5px 0;
+}
+
+.menu a:hover {
+	color: #eb5635;
+	border-bottom: 2px solid #eb5635;
+}
+
+.menu__list {
+
+}
+
+.social__icons {
+	flex: 0 0 10%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 0 30px;
+}
+
+.header__info {
+	margin: 130px 0 0 20px;
+}
+
+.header__info-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.header__info-title {
+	color: #fff;
+	font-size: 42px;
+	font-family: Facon;
+	margin: 0 0 45px 0;
+	position: relative;
+}
+
+.header__info-title::after {
+	content: " ";
+	border-top: 4px solid #eb5635;
+	width: 270px;
+	position: absolute;
+	left: 0;
+	top: 130%;
+}
+
+.header__info-subtutle {
+	color: #fff;
+	font-size: 42px;
+	font-family: Facon;
+	margin: 0 0 45px 0;
+}
+
+.header__info-text {
+	color: #fff;
+	font-size: 18px;
+	line-height: 25px;
+	margin: 0 0 45px 0;
+}
+
+.header__info-btns {
+	display: flex;
+}	
+
+.header__info-btns a {
+	display: block;
+	background-color: #fff;
+	color: #000;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 35px;
+	padding: 20px 50px;
+}
+
+.header__info-btns a:hover {
+	background-color: #eb5635;
+	color: #fff;
+}
+
+.app__store {
+
+}
+
+.google__store {
+	margin: 0 0 0 50px;
+}
+
+/*============================================*//*============================================*/
+
+/*Контентная часть ===========================================================================*/
+
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+/*============================================*//*============================================*/
+
+/*Homefront ==================================================================================*/
+
+.homefront__block {
+	min-height: 550px;
+	background-image: url(../IMG/Homefront-block/1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.homefront__container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.homefront__info {
+	display: flex;
+	justify-content: flex-end;
+	padding: 80px 0 0 0;
+}
+
+.homefront__item {
+	flex: 0 0 45%;
+}
+
+.homefront__item-row {
+	display: flex;
+	margin: 0 0 40px 0;
+}
+
+.homefront__item-title {
+	font-size: 42px;
+	font-family: Facon;
+	margin: 0 40px 0 0;
+	position: relative;
+}
+
+.homefront__item-title::after {
+	content: " ";
+	border-top: 4px solid #eb5635;
+	width: 200px;
+	position: absolute;
+	left: 0;
+	top: 110%;
+}
+
+.homefront__item-subtitle {
+	color: #dedede;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.homefront__item-maintext {
+	font-size: 42px;
+	line-height: 50px;
+	margin: 0 0 30px 0;
+}
+
+.homefront__item-text {
+	font-size: 18px;
+	color: #393a3b;
+	line-height: 28px;
+	margin: 0 0 50px 0;
+}
+
+.homefront__item-btns {
+	display: flex;
+}
+
+.homefront__item-btns a {
+	display: block;
+	background-color: #fff;
+	color: #000;
+	font-size: 18px;
+	font-weight: 600;
+	border: 4px solid #eb5635;
+	border-radius: 35px;
+	padding: 20px 50px;
+}
+
+.homefront__item-btns a:hover {
+	background-color: #eb5635;
+	color: #fff;
+}
+
+/*============================================*//*============================================*/
+
+/*Games ======================================================================================*/
+
+.games__block {
+	
+}
+
+.games__container {
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+.games__block-row {
+	display: flex;
+}
+
+/*Dishonored ==================================================================================*/
+
+.dishonored {
+	position: relative;
+}
+
+.dishonored__row {
+	display: flex;
+	width: 500px;
+}	
+
+.dishonored__image {
+
+}
+
+.dishonored__image img {
+
+}
+
+.dishonored_ios {
+	color: #fff;
+	background-color: #eb5635;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 5px 20px;
+	position: absolute;
+	left: 15px;
+	bottom: 30px;
+}
+
+.dishonored__info {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	padding: 70px 30px 0 50px;
+}
+
+.dishonored__title {
+	font-size: 27px;
+	font-family: Facon;
+	margin: 0 0 30px 0;
+}
+
+.dishonored__text {
+	color: #b1b1b1;
+	font-size: 16px;
+	line-height: 20px;
+	margin: 0 0 40px 0;
+}
+
+.dishonored__more {
+	display: flex;
+	flex-direction: column;
+}
+
+.dishonored__one {
+	display: flex;
+	align-items: center;
+	margin: 0 0 20px 0;
+}
+
+.one {
+	color: #eb5635;
+	font-weight: 600;
+	font-size: 18px;
+	border: 2px solid #eb5635;
+	border-radius: 50%;
+	padding: 7.5px 12px;
+	margin: 0 10px 0 0;
+}
+
+.action {
+	color: #eb5635;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.dishonored__two {
+	display: flex;
+	align-items: center;
+	margin: 0 0 60px 0;
+}
+
+.two {
+	color: #eb5635;
+	font-weight: 600;
+	font-size: 18px;
+	border: 2px solid #eb5635;
+	border-radius: 50%;
+	padding: 7.5px 12px;
+	margin: 0 10px 0 0;
+}
+
+.kids {
+	color: #eb5635;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.dishonored__btn {
+	display: flex;
+	padding: 0 0 0 10px;
+}
+
+.dishonored__link {
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 12px 35px;
+	background-color: #eb5635;
+	border-radius: 30px;
+}
+
+.dishonored__link a:hover {
+	box-shadow: 0 0 2px #eb5635;
+}	
+
+/*============================================*//*============================================*/
+
+/*Drift 3 ====================================================================================*/
+
+.drift {
+	margin: 0 25px;
+}
+
+.drift__column {
+	display: flex;
+	min-height: 500px;
+}
+
+.drift__item {
+	background-color: #fff;
+}
+
+.drift__image {
+
+}
+
+.drift__title {
+	font-family: Facon;
+	font-size: 27px;
+	line-height: 35px;
+	margin: 40px 0 64px 15px;
+}
+
+.drift__btn {
+	display: flex;
+	justify-content: center;
+}
+
+.drift__link {
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 12px 35px;
+	background-color: #eb5635;
+	border-radius: 30px;
+}
+
+/*============================================*//*============================================*/
+
+/*Battelfield ================================================================================*/
+
+.battelfield {
+	display: flex;
+	justify-content: flex-end;
+	width: 500px;
+	min-height: 500px;
+	background-image: url(../IMG/Games/3.png);
+}
+
+.battelfield__column {
+	flex: 0 0 40%;
+	display: flex;
+	flex-direction: column;
+	margin: 60px 20px 0 0;
+}
+
+.battelfield__ios {
+	width: 70px;
+	height: 22px;
+	line-height: 26px;
+	color: #fff;
+	background-color: #eb5635;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.battelfield__title {
+	color: #fff;
+	font-size: 24px;
+	font-family: Facon;
+	line-height: 38px;
+	margin: 30px 0 30px 0;
+}
+
+.battelfield__text {
+	color: #efefef;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.battelfield__btn {
+	display: flex;
+	margin: 40px 0 0 0;
+}
+
+.battelfield__link {
+	color: #efefef;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 10px 35px;
+	border: 4px solid #efefef;
+	border-radius: 30px;
+}
+
+/*============================================*//*============================================*/
+
+/*Who ========================================================================================*/
+
+.who__block {
+	margin: 50px 0;
+}
+
+.who__container {
+	max-width: 1180px;
+	margin: 0 auto;	
+}
+
+.who__row {
+	display: flex;
+}
+
+.who__title {
+	flex: 0 0 35%;
+	font-size: 36px;
+	font-family: Facon;
+}
+
+.who__info {
+	flex: 0 0 65%;
+	color: #727272;
+	font-size: 15px;
+	font-weight: 550;
+	font-style: italic;
+	line-height: 20px;
+}
+
+.who__info span {
+	color: #eb5635;
+}
+
+/*============================================*//*============================================*/
+
+/*Work =======================================================================================*/
+
+.work__block {
+	margin: 0 0 70px 0;
+}
+
+.work__container {
+	max-width: 1180px;
+	margin: 0 auto;	
+}
+
+.work__row {
+	display: flex;
+}
+
+.work__title {
+	flex: 0 0 35%;
+	font-size: 36px;
+	font-family: Facon;
+}
+
+.work__info {
+	flex: 0 0 65%;
+	color: #727272;
+	font-size: 15px;
+	font-weight: 550;
+	font-style: italic;
+	line-height: 20px;
+}
+
+/*============================================*//*============================================*/
+
+/*Developers =================================================================================*/
+
+.developers__block {
+	margin: 0 0 100px 0;
+}
+
+.developers__container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.developers__row {
+	display: flex;
+	margin: 0 -10px;
+}
+
+.developers__content {
+	flex: 0 0 50%;
+	padding: 0 10px;
+}
+
+.developers__item {
+	background-color: #fff;
+	padding: 40px 0 20px 60px;
+	border-radius: 20px;
+}
+
+.item__title {
+	font-size: 21px;
+	font-weight: 600;
+	margin: 0 0 15px 0;
+}
+
+.item__location {
+	display: flex;
+	color: #727272;
+	font-size: 15px;
+	font-weight: 600;
+	margin: 0 0 20px 0;
+}
+
+.location {
+	display: flex;
+	align-items: center;
+	margin: 0 40px 0 0;
+}
+
+.time {
+	display: flex;
+	align-items: center;
+}
+
+.item__location img {
+	margin: 0 10px 0 0;
+}
+
+.item__text {
+	color: #727272;
+	line-height: 22px;
+	margin: 0 0 30px 0;
+}
+
+.item__btn {
+	display: flex;
+}
+
+.item__link {
+	color: #eb5635;
+	font-weight: 600;
+	border: 2px solid #eb5635;
+	border-radius: 50px;
+	padding: 10px 30px;
+}
+
+.item__link:hover {
+	background-color: #eb5635;
+	color: #fff;
+}
+
+/*============================================*//*============================================*/
+
+/*Twitter ====================================================================================*/
+
+.twitter__block {
+
+}
+
+.twitter__container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.twitter__row {
+	display: flex;
+	margin: 0 -10px;
+}
+
+.twitter__section {
+	flex: 0 0 33.333%;
+	padding: 0 10px;
+}
+
+.section__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 20px 0;
+}
+
+.section__name {
+	font-size: 36px;
+	font-family: Facon;
+}
+
+.section__more {
+	color: #727272;
+	font-weight: 600;
+}
+
+.section__item {
+	display: flex;
+	flex-direction: column;
+	min-height: 320px;
+	background-color: #fff;
+	padding: 40px 30px;
+}
+
+.item__content {
+	display: flex;
+	align-items: center;
+}
+
+.item__content img {
+	margin: 0 30px 0 0;
+	border-radius: 50%;
+}
+
+.item__body {
+	display: flex;
+	flex-direction: column;
+}
+
+.item__body-text {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24px;
+	margin: 0 0 15px 0;
+}
+
+.item__body-date {
+	color: #727272;
+	font-weight: 600;
+}
+
+.first {
+	margin: 0 0 30px 0;
+}
+
+.second__item-title {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24px;
+	margin: 0 0 15px 0;
+}
+
+.second__item-text {
+	color: #727272;
+	font-size: 15px;
+	font-style: italic;
+	line-height: 22px;
+	margin: 0 0 20px 0;
+}
+
+.second__item-btn {
+
+}
+
+.second__item-link {
+	color: #eb5635;
+	font-size: 18px;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.section__item-last {
+	display: flex;
+	flex-direction: column;
+	min-height: 320px;
+	font-weight: 600;
+	background-color: #fff;
+	padding: 30px;
+}
+
+.last__text {
+	color: #727272;
+	font-size: 15px;
+	line-height: 22px;
+	margin: 0 0 30px 0;
+}
+
+.last__info {
+	color: #727272;
+	font-size: 15px;
+	line-height: 22px;
+	margin: 0 0 30px 0;
+}
+
+.twitter__profile {
+	color: #59adeb;
+}
+
+.twitter__link {
+	display: flex;
+	align-items: center;
+}
+
+.twitter__link img {
+	margin: 0 10px 0 0;
+}
+
+.main__link {
+	color: #59adeb;
+}
+
+/*============================================*//*============================================*/
+
+.footer {
+	background-color: #fff;
+	margin: 60px 0 0 0;
+}
+
+.footer__container {
+	max-width: 1180px;
+	margin: 0 auto
+}
+
+.footer__rows {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__rows-first {
+
+}
+
+.first__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.footer__main {
+	flex: 0 0 60%;
+	display: flex;
+	align-items: center;
+}
+
+.footer__main img {
+	margin: 0 30px 0 0;
+}
+
+.footer__menu {
+	flex: 0 0 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer__menu a {
+	font-size: 15px;
+	font-weight: 600;
+	color: #000;
+	padding: 0 0 5px 0;
+}
+
+.footer__menu a:hover {
+	color: #eb5635;
+	border-bottom: 2px solid #eb5635;
+}
+
+.footer__lang {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.footer__rows-second {
+	padding: 25px 0;
+}
+
+.second__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.second__copyright {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.second__privacy {
+	font-size: 15px;
+	font-weight: 600;
+}
